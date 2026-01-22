@@ -14,3 +14,5 @@ This project uses BG-NBD and Gamma-Gamma models to estimate how customers will b
 ## 💻Requirements
 
 `pip install lifes pandas matplotlib seaborn'
+
+<img width="1292" height="869" alt="image" src="https://github.com/user-attachments/assets/ceed99b3-a775-4749-8019-348868192ca2" />

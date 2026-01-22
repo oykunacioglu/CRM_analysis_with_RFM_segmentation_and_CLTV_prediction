@@ -1,16 +1,16 @@
-# Müşteri Yaşam Boyu Değeri (CLTV) Tahmini
+# Customer Lifetime Value (CLTV) Estimation
 
-Bu proje, BG-NBD ve Gamma-Gamma modellerini kullanarak müşterilerin gelecekteki satın alma davranışlarını ve şirkete bırakacakları toplam parasal değeri tahmin etmektedir.
+This project uses BG-NBD and Gamma-Gamma models to estimate how customers will buy their data and the total monetary value of what they will leave with the company.
 
-## 🚀 Proje Özeti
-- **Veri Seti:** İngiltere merkezli bir perakende şirketinin 2010-2011 satış verileri.
-- **Modelleme:** BG-NBD (İşlem Tahmini) & Gamma-Gamma (Kâr Tahmini).
-- **Segmentasyon:** Müşteriler CLTV değerlerine göre 4 gruba (A, B, C, D) ayrıldı.
+## 🚀 Project Summary
+- **Data Set:** Sales data from a UK-based retail company for 2010-2011.
+- **Modeling:** BG-NBD (Transaction Prediction) & Gamma-Gamma (Profit Prediction).
+- **Segmentation:** Customers were divided into 4 groups (A, B, C, D) based on their CLTV values.
 
-## 📊 Öne Çıkan Çıktılar
-- Müşterilerin 3 ve 6 aylık gelecek satın alma projeksiyonları oluşturuldu.
-- En değerli segmentte yer alan (A) ancak terk etme riski taşıyan (Churn Risk) müşteriler tespit edildi.
-- Segment bazlı stratejik aksiyon planları hazırlandı.
+## 📊 Key Outcomes
+- Customers' 3 and 6-month future purchase plans are included.
+- Customers in the most valuable segment (A) but at risk of abandonment (Churn Risk) were identified. - Segment-based restructuring plans are prepared.
 
-## 💻 Gereksinimler
-`pip install lifetimes pandas matplotlib seaborn`
+## 💻Requirements
+
+`pip install lifes pandas matplotlib seaborn'

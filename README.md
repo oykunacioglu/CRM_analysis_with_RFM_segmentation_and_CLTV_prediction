@@ -21,10 +21,7 @@ This project is a high-performance **SaaS prototype** designed for modern market
 
 ---
 
-### 🚀 Quick Start
-1. Clone: `git clone <your-repo-url>`
-2. Install: `pip install -r requirements.txt`
-3. Run: Open `main_analysis.ipynb` and enjoy the AI power!
 <img width="1292" height="869" alt="image" src="https://github.com/user-attachments/assets/ceed99b3-a775-4749-8019-348868192ca2" />
+
 
 

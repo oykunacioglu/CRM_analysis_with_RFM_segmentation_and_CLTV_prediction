@@ -1,0 +1,173 @@
+segment,Customer Count,Mean CLTV,Total CLTV,Mean Expected Sales (6 Months),Total Expected Sales (6 Months),Mean Expected Profit,AI_Strategy,Churn_Risk_Score,Churn_Status,AI_Integrated_Strategy
+A,1064,3545.787180759921,3772717.5603285558,5.135425110626773,5464.092317706887,753.021888420251,"Certainly! Here are two short marketing strategies for each segment:
+
+### Segment A: Avg Profit $753.02, Avg Sales: 5.14
+1. **Loyalty Program Enhancement**: Introduce a premium loyalty program that offers exclusive rewards, discounts, and personalized offers for repeat purchases to encourage even more frequent buying.
+2. **Upselling and Cross-Selling Campaigns**: Implement targeted email or in-store promotions that suggest complementary products based on their purchase history to maximize the average sales per customer.
+
+### Segment B: Avg Profit $375.81, Avg Sales: 2.46
+1. **Bundling Offers**: Create product bundles at a discounted rate to encourage customers to buy more items in a single transaction, increasing the average sales and overall profit.
+2. **Customer Education Content**: Develop informative content (like how-to guides or webinars) that showcases the value and benefits of purchasing additional products to stimulate interest in repeat purchases.
+
+### Segment C: Avg Profit $284.01, Avg Sales: 1.45
+1. **Entry-Level Promotions**: Launch special ""first-time customer"" discounts to convert new shoppers into regular buyers, thereby increasing both average sales and profit margins.
+2. **Referral Discounts**: Encourage existing customers to refer friends by offering both the referrer and the new customer a discount on their next purchase, aiming to increase sales frequency.
+
+### Segment D: Avg Profit $297.20, Avg Sales: 0.35
+1. **Awareness Campaigns**: Invest in targeted digital ads aimed at building brand awareness and educating potential customers about the value of your products, driving traffic to the website or store.
+2. **Follow-Up Engagements**: Implement a follow-up email campaign for customers who showed interest but did not complete a purchase; offer a limited-time discount or incentive to drive conversions. 
+
+These strategies aim to leverage their unique characteristics and increase both sales and profitability within each segment.",0.0,Stable,"### Segment A: Avg Profit $753.02, Churn Status: Stable (Risk: 0.0%)
+**Marketing Strategy:** Implement a loyalty rewards program that provides exclusive offers or points for continued engagement, incentivizing them to maintain their relationship with your brand. Highlight premium offerings or exclusive experiences that can reinforce their status as valued customers.
+
+**Win-back Action:** Periodically reach out with personalized content and opportunities that acknowledge their loyalty. Maintain engagement through updates on new products or services that align with their preferences.
+
+---
+
+### Segment B: Avg Profit $375.81, Churn Status: Stable (Risk: 25.0%)
+**Marketing Strategy:** Launch targeted email campaigns featuring personalized recommendations based on their purchase history. Offer limited-time promotions tailored to their preferences, encouraging upsell and cross-sell opportunities.
+
+**Win-back Action:** Identify customers who have decreased activity and send them a ""We Miss You"" offer, such as a discount on their next purchase or free shipping. Follow up with a personalized message addressing their past preferences.
+
+---
+
+### Segment C: Avg Profit $284.01, Churn Status: High Risk (Risk: 50.0%)
+**Marketing Strategy:** Create engaging content that reinforces brand value and encourages regular interaction, such as educational webinars or exclusive sneak peeks into new products. Use social proof and testimonials to build trust.
+
+**Win-back Action:** Implement a re-engagement campaign with a strong incentive, such as a significant discount or a free trial of a new product. Follow this with a personalized outreach call or email to gather feedback on past experiences and rebuild rapport.
+
+---
+
+### Segment D: Avg Profit $297.20, Churn Status: High Risk (Risk: 75.0%)
+**Marketing Strategy:** Develop a VIP program with high perceived value benefits such as early access to sales, exclusive products, or personalized services. Utilize surveys to understand their needs better and refine offerings accordingly.
+
+**Win-back Action:** Send a personalized apology and discount offer targeting their pain points or reasons for disengagement. Follow up with a customer service touchpoint to express commitment to improving their experience and solicit feedback on how you can better meet their needs."
+B,1063,801.3206021200997,851803.800053666,2.458580819437562,2613.471411062128,375.814693049704,"Certainly! Here are two short marketing strategies for each segment:
+
+### Segment A: Avg Profit $753.02, Avg Sales: 5.14
+1. **Loyalty Program Enhancement**: Introduce a premium loyalty program that offers exclusive rewards, discounts, and personalized offers for repeat purchases to encourage even more frequent buying.
+2. **Upselling and Cross-Selling Campaigns**: Implement targeted email or in-store promotions that suggest complementary products based on their purchase history to maximize the average sales per customer.
+
+### Segment B: Avg Profit $375.81, Avg Sales: 2.46
+1. **Bundling Offers**: Create product bundles at a discounted rate to encourage customers to buy more items in a single transaction, increasing the average sales and overall profit.
+2. **Customer Education Content**: Develop informative content (like how-to guides or webinars) that showcases the value and benefits of purchasing additional products to stimulate interest in repeat purchases.
+
+### Segment C: Avg Profit $284.01, Avg Sales: 1.45
+1. **Entry-Level Promotions**: Launch special ""first-time customer"" discounts to convert new shoppers into regular buyers, thereby increasing both average sales and profit margins.
+2. **Referral Discounts**: Encourage existing customers to refer friends by offering both the referrer and the new customer a discount on their next purchase, aiming to increase sales frequency.
+
+### Segment D: Avg Profit $297.20, Avg Sales: 0.35
+1. **Awareness Campaigns**: Invest in targeted digital ads aimed at building brand awareness and educating potential customers about the value of your products, driving traffic to the website or store.
+2. **Follow-Up Engagements**: Implement a follow-up email campaign for customers who showed interest but did not complete a purchase; offer a limited-time discount or incentive to drive conversions. 
+
+These strategies aim to leverage their unique characteristics and increase both sales and profitability within each segment.",25.0,Stable,"### Segment A: Avg Profit $753.02, Churn Status: Stable (Risk: 0.0%)
+**Marketing Strategy:** Implement a loyalty rewards program that provides exclusive offers or points for continued engagement, incentivizing them to maintain their relationship with your brand. Highlight premium offerings or exclusive experiences that can reinforce their status as valued customers.
+
+**Win-back Action:** Periodically reach out with personalized content and opportunities that acknowledge their loyalty. Maintain engagement through updates on new products or services that align with their preferences.
+
+---
+
+### Segment B: Avg Profit $375.81, Churn Status: Stable (Risk: 25.0%)
+**Marketing Strategy:** Launch targeted email campaigns featuring personalized recommendations based on their purchase history. Offer limited-time promotions tailored to their preferences, encouraging upsell and cross-sell opportunities.
+
+**Win-back Action:** Identify customers who have decreased activity and send them a ""We Miss You"" offer, such as a discount on their next purchase or free shipping. Follow up with a personalized message addressing their past preferences.
+
+---
+
+### Segment C: Avg Profit $284.01, Churn Status: High Risk (Risk: 50.0%)
+**Marketing Strategy:** Create engaging content that reinforces brand value and encourages regular interaction, such as educational webinars or exclusive sneak peeks into new products. Use social proof and testimonials to build trust.
+
+**Win-back Action:** Implement a re-engagement campaign with a strong incentive, such as a significant discount or a free trial of a new product. Follow this with a personalized outreach call or email to gather feedback on past experiences and rebuild rapport.
+
+---
+
+### Segment D: Avg Profit $297.20, Churn Status: High Risk (Risk: 75.0%)
+**Marketing Strategy:** Develop a VIP program with high perceived value benefits such as early access to sales, exclusive products, or personalized services. Utilize surveys to understand their needs better and refine offerings accordingly.
+
+**Win-back Action:** Send a personalized apology and discount offer targeting their pain points or reasons for disengagement. Follow up with a customer service touchpoint to express commitment to improving their experience and solicit feedback on how you can better meet their needs."
+C,1064,353.0482282509892,375643.31485905254,1.4490040439975864,1541.740302813432,284.0145962821397,"Certainly! Here are two short marketing strategies for each segment:
+
+### Segment A: Avg Profit $753.02, Avg Sales: 5.14
+1. **Loyalty Program Enhancement**: Introduce a premium loyalty program that offers exclusive rewards, discounts, and personalized offers for repeat purchases to encourage even more frequent buying.
+2. **Upselling and Cross-Selling Campaigns**: Implement targeted email or in-store promotions that suggest complementary products based on their purchase history to maximize the average sales per customer.
+
+### Segment B: Avg Profit $375.81, Avg Sales: 2.46
+1. **Bundling Offers**: Create product bundles at a discounted rate to encourage customers to buy more items in a single transaction, increasing the average sales and overall profit.
+2. **Customer Education Content**: Develop informative content (like how-to guides or webinars) that showcases the value and benefits of purchasing additional products to stimulate interest in repeat purchases.
+
+### Segment C: Avg Profit $284.01, Avg Sales: 1.45
+1. **Entry-Level Promotions**: Launch special ""first-time customer"" discounts to convert new shoppers into regular buyers, thereby increasing both average sales and profit margins.
+2. **Referral Discounts**: Encourage existing customers to refer friends by offering both the referrer and the new customer a discount on their next purchase, aiming to increase sales frequency.
+
+### Segment D: Avg Profit $297.20, Avg Sales: 0.35
+1. **Awareness Campaigns**: Invest in targeted digital ads aimed at building brand awareness and educating potential customers about the value of your products, driving traffic to the website or store.
+2. **Follow-Up Engagements**: Implement a follow-up email campaign for customers who showed interest but did not complete a purchase; offer a limited-time discount or incentive to drive conversions. 
+
+These strategies aim to leverage their unique characteristics and increase both sales and profitability within each segment.",50.0,High Risk,"### Segment A: Avg Profit $753.02, Churn Status: Stable (Risk: 0.0%)
+**Marketing Strategy:** Implement a loyalty rewards program that provides exclusive offers or points for continued engagement, incentivizing them to maintain their relationship with your brand. Highlight premium offerings or exclusive experiences that can reinforce their status as valued customers.
+
+**Win-back Action:** Periodically reach out with personalized content and opportunities that acknowledge their loyalty. Maintain engagement through updates on new products or services that align with their preferences.
+
+---
+
+### Segment B: Avg Profit $375.81, Churn Status: Stable (Risk: 25.0%)
+**Marketing Strategy:** Launch targeted email campaigns featuring personalized recommendations based on their purchase history. Offer limited-time promotions tailored to their preferences, encouraging upsell and cross-sell opportunities.
+
+**Win-back Action:** Identify customers who have decreased activity and send them a ""We Miss You"" offer, such as a discount on their next purchase or free shipping. Follow up with a personalized message addressing their past preferences.
+
+---
+
+### Segment C: Avg Profit $284.01, Churn Status: High Risk (Risk: 50.0%)
+**Marketing Strategy:** Create engaging content that reinforces brand value and encourages regular interaction, such as educational webinars or exclusive sneak peeks into new products. Use social proof and testimonials to build trust.
+
+**Win-back Action:** Implement a re-engagement campaign with a strong incentive, such as a significant discount or a free trial of a new product. Follow this with a personalized outreach call or email to gather feedback on past experiences and rebuild rapport.
+
+---
+
+### Segment D: Avg Profit $297.20, Churn Status: High Risk (Risk: 75.0%)
+**Marketing Strategy:** Develop a VIP program with high perceived value benefits such as early access to sales, exclusive products, or personalized services. Utilize surveys to understand their needs better and refine offerings accordingly.
+
+**Win-back Action:** Send a personalized apology and discount offer targeting their pain points or reasons for disengagement. Follow up with a customer service touchpoint to express commitment to improving their experience and solicit feedback on how you can better meet their needs."
+D,1064,63.908514684200206,67998.65962398902,0.3512044635022147,373.68154916635643,297.20267027459096,"Certainly! Here are two short marketing strategies for each segment:
+
+### Segment A: Avg Profit $753.02, Avg Sales: 5.14
+1. **Loyalty Program Enhancement**: Introduce a premium loyalty program that offers exclusive rewards, discounts, and personalized offers for repeat purchases to encourage even more frequent buying.
+2. **Upselling and Cross-Selling Campaigns**: Implement targeted email or in-store promotions that suggest complementary products based on their purchase history to maximize the average sales per customer.
+
+### Segment B: Avg Profit $375.81, Avg Sales: 2.46
+1. **Bundling Offers**: Create product bundles at a discounted rate to encourage customers to buy more items in a single transaction, increasing the average sales and overall profit.
+2. **Customer Education Content**: Develop informative content (like how-to guides or webinars) that showcases the value and benefits of purchasing additional products to stimulate interest in repeat purchases.
+
+### Segment C: Avg Profit $284.01, Avg Sales: 1.45
+1. **Entry-Level Promotions**: Launch special ""first-time customer"" discounts to convert new shoppers into regular buyers, thereby increasing both average sales and profit margins.
+2. **Referral Discounts**: Encourage existing customers to refer friends by offering both the referrer and the new customer a discount on their next purchase, aiming to increase sales frequency.
+
+### Segment D: Avg Profit $297.20, Avg Sales: 0.35
+1. **Awareness Campaigns**: Invest in targeted digital ads aimed at building brand awareness and educating potential customers about the value of your products, driving traffic to the website or store.
+2. **Follow-Up Engagements**: Implement a follow-up email campaign for customers who showed interest but did not complete a purchase; offer a limited-time discount or incentive to drive conversions. 
+
+These strategies aim to leverage their unique characteristics and increase both sales and profitability within each segment.",75.0,High Risk,"### Segment A: Avg Profit $753.02, Churn Status: Stable (Risk: 0.0%)
+**Marketing Strategy:** Implement a loyalty rewards program that provides exclusive offers or points for continued engagement, incentivizing them to maintain their relationship with your brand. Highlight premium offerings or exclusive experiences that can reinforce their status as valued customers.
+
+**Win-back Action:** Periodically reach out with personalized content and opportunities that acknowledge their loyalty. Maintain engagement through updates on new products or services that align with their preferences.
+
+---
+
+### Segment B: Avg Profit $375.81, Churn Status: Stable (Risk: 25.0%)
+**Marketing Strategy:** Launch targeted email campaigns featuring personalized recommendations based on their purchase history. Offer limited-time promotions tailored to their preferences, encouraging upsell and cross-sell opportunities.
+
+**Win-back Action:** Identify customers who have decreased activity and send them a ""We Miss You"" offer, such as a discount on their next purchase or free shipping. Follow up with a personalized message addressing their past preferences.
+
+---
+
+### Segment C: Avg Profit $284.01, Churn Status: High Risk (Risk: 50.0%)
+**Marketing Strategy:** Create engaging content that reinforces brand value and encourages regular interaction, such as educational webinars or exclusive sneak peeks into new products. Use social proof and testimonials to build trust.
+
+**Win-back Action:** Implement a re-engagement campaign with a strong incentive, such as a significant discount or a free trial of a new product. Follow this with a personalized outreach call or email to gather feedback on past experiences and rebuild rapport.
+
+---
+
+### Segment D: Avg Profit $297.20, Churn Status: High Risk (Risk: 75.0%)
+**Marketing Strategy:** Develop a VIP program with high perceived value benefits such as early access to sales, exclusive products, or personalized services. Utilize surveys to understand their needs better and refine offerings accordingly.
+
+**Win-back Action:** Send a personalized apology and discount offer targeting their pain points or reasons for disengagement. Follow up with a customer service touchpoint to express commitment to improving their experience and solicit feedback on how you can better meet their needs."

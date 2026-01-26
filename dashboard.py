@@ -510,89 +510,85 @@ def main():
             st.dataframe(seg_table, use_container_width=True, hide_index=True)
     
     # ========================================================================
-    # TAB 3: AI STRATEGY ENGINE
+    # TAB 3: AI STRATEGY ENGINE (GÜNCELLENMİŞ VERSİYON)
     # ========================================================================
     with tab3:
-        st.subheader(f"🤖 AI Strategy: {selected_rfm}")
-        st.markdown("**AI-Powered Action Plan for Selected Segment**")
+        st.subheader("🤖 AI-Integrated Strategy Engine")
+        st.markdown("**Select a segment below to view specific AI-driven recommendations.**")
+        
+        # Strateji Verileri
+        strategies_data = {
+            "Segment A": {
+                "marketing": "Implement a VIP Loyalty Program offering exclusive perks, such as early access to new products or special events, ensuring they feel valued and engaged.",
+                "win_back": "Send personalized appreciation messages with special offers or discounts on their next purchase, reinforcing their loyalty and encouraging repeat business.",
+                "emoji": "🏆",
+                "color": "success"
+            },
+            "Segment B": {
+                "marketing": "Launch targeted email campaigns that offer tailored recommendations based on their past purchases, combined with limited-time offers to boost engagement and sales.",
+                "win_back": "Create a feedback loop by reaching out with a survey about their experience, offering a small discount for completing it, showing that their opinions matter and aiming to re-engage them.",
+                "emoji": "💎",
+                "color": "info"
+            },
+            "Segment C": {
+                "marketing": "Introduce a re-engagement campaign featuring educational content about product usage or benefits, aimed at increasing their interest and perceived value.",
+                "win_back": "Provide a strong incentive, such as a significant discount or a free add-on with their next purchase, targeted specifically to those at high risk of churning.",
+                "emoji": "⚠️",
+                "color": "warning"
+            },
+            "Segment D": {
+                "marketing": "Implement personalized check-in communications that convey concern for their experience, with customized recommendations to enhance their satisfaction and product engagement.",
+                "win_back": "Offer a compelling 'second chance' offer, such as a one-time deep discount or value bundle, aimed at winning back their trust and prompting immediate action.",
+                "emoji": "🚨",
+                "color": "error"
+            }
+        }
+
+        # Session State Kontrolü
+        if 'selected_strat_segment' not in st.session_state:
+            st.session_state.selected_strat_segment = 'Segment A'
+
         st.markdown("---")
+
+        # 4 Tane Tıklanabilir Kutu (Butonlar)
+        col1, col2, col3, col4 = st.columns(4)
         
-        # Get strategy for selected RFM segment and CLTV grade
-        emoji = get_rfm_segment_emoji(selected_rfm)
-        strategy_text = get_rfm_segment_strategy(selected_rfm, ai_strategies)
+        # Butonların oluşturulması ve tıklama mantığı
+        if col1.button(f"🏆 Segment A", use_container_width=True):
+            st.session_state.selected_strat_segment = 'Segment A'
+            
+        if col2.button(f"💎 Segment B", use_container_width=True):
+            st.session_state.selected_strat_segment = 'Segment B'
+            
+        if col3.button(f"⚠️ Segment C", use_container_width=True):
+            st.session_state.selected_strat_segment = 'Segment C'
+            
+        if col4.button(f"🚨 Segment D", use_container_width=True):
+            st.session_state.selected_strat_segment = 'Segment D'
+
+        # Seçilen Stratejinin Gösterimi
+        selected_seg = st.session_state.selected_strat_segment
+        data = strategies_data[selected_seg]
+
+        st.markdown(f"### {data['emoji']} Strategy for {selected_seg}")
         
-        # Display strategy in styled box
-        st.markdown(f"""
-        <div class="strategy-box">
-            <h2 style="margin: 0 0 15px 0; font-size: 1.8em;">
-                {emoji} {selected_rfm}
-            </h2>
-            <div style="line-height: 1.8; font-size: 1.05em;">
-                {strategy_text}
+        # Görsel olarak zenginleştirilmiş kutular
+        with st.container():
+            # Marketing Strategy Box
+            st.markdown(f"""
+            <div style="background-color: #000000; padding: 20px; border-radius: 10px; border-left: 5px solid #2E86AB; margin-bottom: 20px;">
+                <h4 style="color: #2E86AB; margin-top: 0;">📢 Marketing Strategy</h4>
+                <p style="font-size: 1.1em; line-height: 1.6;">{data['marketing']}</p>
             </div>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        st.markdown("---")
-        
-        # Grade-specific insights
-        st.markdown(f"### 📊 Strategy Breakdown by CLTV Grade within {selected_rfm}")
-        
-        if not segment_filtered_df.empty:
-            grade_breakdown = segment_filtered_df.groupby('cltv_grade', observed=True).agg({
-                'Customer ID': 'count',
-                'cltv': 'mean',
-                'Current Profit': 'mean',
-                'Projected Profit (6 Months)': 'mean'
-            }).round(2)
-            
-            grade_breakdown.columns = ['Customers', 'Avg CLTV', 'Avg Profit', 'Avg 6M Proj']
-            grade_breakdown = grade_breakdown.reset_index()
-            
-            # Display as tabs for each grade within this segment
-            grade_cols = st.columns(len(grade_breakdown))
-            
-            for idx, (col, (_, row)) in enumerate(zip(grade_cols, grade_breakdown.iterrows())):
-                grade = row['cltv_grade']
-                color_map = {
-                    'D (At Risk)': '#FF6B6B',
-                    'C (Re-Engagement)': '#FFA500',
-                    'B (High Potential)': '#00A8E8',
-                    'A (Champions)': '#00D084'
-                }
-                color = color_map.get(str(grade), '#999')
-                
-                with col:
-                    st.markdown(f"""
-                    <div style="background-color: {color}20; padding: 15px; border-radius: 10px; border-left: 4px solid {color};">
-                        <h4 style="color: {color}; margin: 0 0 10px 0;">{grade}</h4>
-                        <p style="margin: 5px 0; color: #333;"><strong>{int(row['Customers'])}</strong> Customers</p>
-                        <p style="margin: 5px 0; color: #333;">CLTV: {format_currency(row['Avg CLTV'])}</p>
-                        <p style="margin: 5px 0; color: #333;">Profit: {format_currency(row['Avg Profit'])}</p>
-                    </div>
-                    """, unsafe_allow_html=True)
-        
-        st.markdown("---")
-        
-        # Segment financial overview
-        st.markdown("### 💰 Financial Impact Potential")
-        
-        if not segment_filtered_df.empty:
-            col1, col2, col3 = st.columns(3)
-            
-            with col1:
-                current_total = segment_filtered_df['Current Profit'].sum()
-                st.metric("Current Total Profit", format_currency(current_total))
-            
-            with col2:
-                proj_3m_total = segment_filtered_df['Projected Profit (3 Months)'].sum()
-                growth_3m = ((proj_3m_total - current_total) / current_total * 100) if current_total > 0 else 0
-                st.metric("3-Month Projection", format_currency(proj_3m_total), f"{growth_3m:.1f}%")
-            
-            with col3:
-                proj_6m_total = segment_filtered_df['Projected Profit (6 Months)'].sum()
-                growth_6m = ((proj_6m_total - current_total) / current_total * 100) if current_total > 0 else 0
-                st.metric("6-Month Projection", format_currency(proj_6m_total), f"{growth_6m:.1f}%")
+            """, unsafe_allow_html=True)
+
+            # Win-back Action Box
+            st.markdown(f"""
+            <div style="background-color: #000000; padding: 20px; border-radius: 10px; border-left: 5px solid #ff6b35;">
+                <h4 style="color: #ff6b35; margin-top: 0;">↩️ Win-back Action</h4>
+                <p style="font-size: 1.1em; line-height: 1.6;">{data['win_back']}</p>
+            </div>
+            """, unsafe_allow_html=True)
     
     # ========================================================================
     # TAB 4: PREDICTIVE ANALYTICS
